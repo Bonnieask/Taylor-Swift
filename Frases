@@ -1,0 +1,20 @@
+using System;
+
+class FrasesTaylor {
+    static void Main() {
+        string[] frases = {
+            "I remember it all too well.",
+            "Darling I'm a nightmare dressed like a daydream.",
+            "You belong with me.",
+            "It's me, hi, I'm the problem, it's me.",
+            "We never go out of style.",
+            "You drew stars around my scars."
+        };
+
+        Random rand = new Random();
+        int index = rand.Next(frases.Length);
+
+        Console.WriteLine("🎶 Frase da Taylor do dia:");
+        Console.WriteLine($"\"{frases[index]}\"");
+    }
+}
