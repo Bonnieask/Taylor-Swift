@@ -1,0 +1,26 @@
+using System;
+
+class SorteadorMusicas {
+    static void Main() {
+        string[] musicas = {
+            "Love Story",
+            "Blank Space",
+            "You Belong With Me",
+            "Anti-Hero",
+            "All Too Well",
+            "Enchanted",
+            "Cruel Summer",
+            "The Archer",
+            "Style",
+            "Wildest Dreams",
+            "The Man",
+            "Don't Blame Me"
+        };
+
+        Random r = new Random();
+        int indice = r.Next(musicas.Length);
+
+        Console.WriteLine("🎧 Sua música da Taylor Swift hoje é:");
+        Console.WriteLine($"🎵 {musicas[indice]} 🎵");
+    }
+}
