@@ -1,0 +1,40 @@
+using System;
+
+class EraPorHumor {
+    static void Main() {
+        Console.WriteLine("Como você está se sentindo hoje?");
+        Console.WriteLine("1. Romântico(a)");
+        Console.WriteLine("2. Coração partido");
+        Console.WriteLine("3. Poderoso(a)/Rebelde");
+        Console.WriteLine("4. Sonhador(a)/Reflexivo(a)");
+        Console.WriteLine("5. Feliz/Colorido(a)");
+        Console.Write("Digite o número correspondente ao seu humor: ");
+
+        string input = Console.ReadLine();
+
+        string era = "";
+
+        switch (input) {
+            case "1":
+                era = "Speak Now 💜 - Perfeita para momentos românticos e declarações sinceras.";
+                break;
+            case "2":
+                era = "Red ❤️ - Emoções à flor da pele, memórias marcantes e um toque de saudade.";
+                break;
+            case "3":
+                era = "Reputation 🐍 - Energia intensa, atitude forte e amor próprio afiado.";
+                break;
+            case "4":
+                era = "Folklore/Evermore 🌲 - Letras profundas, contos poéticos e vibes calmas.";
+                break;
+            case "5":
+                era = "Lover 💖 - Amor leve, glitter, arco-íris e celebrações do coração.";
+                break;
+            default:
+                era = "Não entendi sua resposta... mas talvez seja hora de ouvir 'All Too Well (10 min version)' 😅";
+                break;
+        }
+
+        Console.WriteLine($"\n✨ Recomendação de era da Taylor Swift: {era}");
+    }
+}
